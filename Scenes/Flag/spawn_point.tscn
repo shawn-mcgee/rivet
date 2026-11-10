@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://c5wsjj215dc0f"]
+
+[ext_resource type="PackedScene" uid="uid://cjpxa8d2jwo6j" path="res://Scenes/Flag/flag.tscn" id="1_00gca"]
+
+[node name="SpawnPoint" type="Node2D" unique_id=2064907135]
+
+[node name="Flag" parent="." unique_id=1345431044 instance=ExtResource("1_00gca")]

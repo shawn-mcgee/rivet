@@ -1,0 +1,15 @@
+# Godot caches and local export credentials
+.godot/
+.godot_export_credentials
+export_credentials.cfg
+
+# Generated builds and editor recovery files
+build/
+*.tmp
+
+# Local machine files
+.DS_Store
+Thumbs.db
+.env
+.env.*
+!.env.example

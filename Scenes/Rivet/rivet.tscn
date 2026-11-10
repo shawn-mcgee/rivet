@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://unukt7qdnp66"]
+
+[ext_resource type="Script" uid="uid://cha7m6fconywu" path="res://Scenes/Rivet/rivet.gd" id="1_8n273"]
+[ext_resource type="SpriteFrames" uid="uid://dcnn6ul1eut30" path="res://Assets/rivet.tres" id="2_qll3s"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_m25cl"]
+size = Vector2(6, 15)
+
+[node name="Rivet" type="CharacterBody2D" unique_id=750422120]
+script = ExtResource("1_8n273")
+maximum_jumps = 2
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=528670454]
+sprite_frames = ExtResource("2_qll3s")
+animation = &"fall"
+autoplay = "idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=576532415]
+position = Vector2(0, 0.5)
+shape = SubResource("RectangleShape2D_m25cl")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=723352338]
+zoom = Vector2(6, 6)

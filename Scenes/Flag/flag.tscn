@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://cjpxa8d2jwo6j"]
+
+[ext_resource type="Script" uid="uid://dpnqkd8b2lidy" path="res://Scenes/Flag/flag.gd" id="1_dnj78"]
+[ext_resource type="Texture2D" uid="uid://b1j2r5sukv34f" path="res://Assets/flag.png" id="2_2epeo"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_mlyr5"]
+radius = 8.0
+
+[node name="Flag" type="Area2D" unique_id=1345431044]
+script = ExtResource("1_dnj78")
+kind = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1785773747]
+texture = ExtResource("2_2epeo")
+hframes = 4
+vframes = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1067798282]
+shape = SubResource("CircleShape2D_mlyr5")
